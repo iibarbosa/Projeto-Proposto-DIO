@@ -1,8 +1,17 @@
 // Desafio Proposto Felipao DIO
 
-let nome = "Kaidan"
-let xp = 10001
-let nivel = ""
+let herois = [
+{nome: "Selene", xp: 1045},   
+{nome: "Arthas", xp: 3052},    
+{nome: "Kaidan", xp: 10001}
+]
+
+for (let i = 0; i < herois.length; i++){
+let nome = herois[i].nome
+let xp = herois[i].xp
+let nivel = ""    
+
+
 
 if (xp < 1000) {
   nivel = "Ferro"  
@@ -30,3 +39,4 @@ else {
 }
 
 console.log ("O Herói " + nome + " está no nível " + nivel)
+}
